@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hathim Manaf | Data Analyst</title>
+    <title>Hathim Manaf | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -11,13 +11,13 @@
 <body>
 
     <nav>
-        <div class="logo">HATHIM<span>MANAF</span></div>
+        <div class="logo">HATHIM<span>.MANAF</span></div>
         <div class="nav-links">
+            <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Work</a>
+            <a href="#projects">Portfolio</a>
             <a href="#certs">Certifications</a>
-            <a href="https://github.com/hathimds" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/hathim-manaf" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#connect" class="nav-cta">Let's Talk</a>
         </div>
     </nav>
 
@@ -27,90 +27,114 @@
                 <img src="profile_picture.jpeg" alt="Hathim Manaf">
             </div>
             <div class="hero-text">
-                <span class="badge">IIT Madras • 7.8 CGPA</span>
-                <h1>Data Analyst & <span>ML Specialist.</span></h1>
-                <p>Translating complex data into business-driven narratives. Experienced in SQL Architecture, BI, and Production ML.</p>
+                <span class="badge">IIT Madras • Data Science & Applications</span>
+                <h1>Architecting <span>Data-Driven</span> Decisions.</h1>
+                <p>Strategic Data Analyst focused on converting complex raw datasets into high-impact business intelligence. Leveraging an <strong>IIT Madras</strong> academic foundation and hands-on industry experience to solve real-world problems.</p>
                 <div class="hero-btns">
-                    <a href="https://github.com/hathimds" class="btn-main">View GitHub</a>
-                    <a href="Data_Analysis_Resume (2).pdf" class="btn-sub" target="_blank">Download Resume</a>
+                    <a href="#projects" class="btn-main">Explore Case Studies</a>
+                    <a href="Hathim_Manaf_Resume.pdf" target="_blank" class="btn-sub">Download Executive CV</a>
                 </div>
             </div>
         </div>
     </header>
 
+    <section id="about">
+        <div class="section-title"><h2>Professional Profile</h2></div>
+        <div class="about-container">
+            <div class="about-box">
+                <p>I am a detail-oriented Data Analyst. My expertise lies in the full data lifecycle: from architecting robust SQL queries and performing deep-dive exploratory analysis to building predictive ML models and high-performance BI dashboards.</p>
+                <p>With a <strong>7.8 CGPA from IIT Madras</strong> and a 6-month intensive internship at <strong>Edure</strong>, I have developed the discipline to handle messy data and the communication skills to present insights that stakeholders actually care about.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills">
-        <div class="section-title"><h2>Technical Skills</h2></div>
-        <div class="skills-grid">
-            <div class="skill-item"><i class="fas fa-database"></i> SQL (CTEs, Window Functions)</div>
-            <div class="skill-item"><i class="fab fa-python"></i> Python (Pandas, Scikit-learn)</div>
-            <div class="skill-item"><i class="fas fa-chart-bar"></i> Power BI (DAX) & Tableau</div>
-            <div class="skill-item"><i class="fas fa-project-diagram"></i> Star Schema Modeling</div>
-            <div class="skill-item"><i class="fas fa-vial"></i> Statistical Analysis & EDA</div>
-            <div class="skill-item"><i class="fas fa-cloud-upload-alt"></i> Deployment (Render)</div>
+        <div class="section-title"><h2>Technical Arsenal</h2></div>
+        <div class="skills-visual">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Data Engineering</h3>
+                <p>Expertise in <strong>MySQL & PostgreSQL</strong>. Mastering Star Schema modeling, CTEs, Window Functions, and complex Joins to ensure data integrity.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h3>Statistical Computing</h3>
+                <p>Advanced <strong>Python</strong> for EDA. Utilizing Pandas, NumPy, and Scikit-learn to uncover hidden trends and build predictive pipelines.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+                <h3>Business Intelligence</h3>
+                <p>Specialized in <strong>Power BI (DAX)</strong> and <strong>Tableau</strong>. Creating interactive, high-retention dashboards that simplify complex business KPIs.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h3>Applied AI & ML</h3>
+                <p>Building and deploying <strong>XGBoost</strong> and Regression models. Transitioning into Generative AI for advanced data synthesis.</p>
+            </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="section-title"><h2>Case Studies</h2></div>
+        <div class="section-title"><h2>Featured Projects</h2></div>
         <div class="portfolio-grid">
             
             <div class="case-card">
                 <div class="case-img"><img src="Health_Insurance_Cost_Prediction.png"></div>
                 <div class="case-body">
-                    <span class="tag">Machine Learning</span>
-                    <h3>Insurance Cost Predictor</h3>
-                    <p>XGBoost regression model ($R^2=0.84$) deployed on Render for real-time predictions.</p>
-                    <a href="https://github.com/hathimds/insure-ai-claim-predictor" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">ML • Python • Render</span>
+                    <h3>Health Insurance Cost Prediction</h3>
+                    <p>Engineered an XGBoost regression model achieving an <strong>R² of 0.84</strong>. Deployed end-to-end to provide real-time premium forecasting.</p>
+                    <a href="https://github.com/hathimds/insure-ai-claim-predictor" class="p-link">View Project</a>
                 </div>
             </div>
 
             <div class="case-card">
                 <div class="case-img"><img src="AtliQ_Hospitality_Analytics.png"></div>
                 <div class="case-body">
-                    <span class="tag">Power BI</span>
-                    <h3>Hospitality Revenue Analytics</h3>
-                    <p>Analyzed ₹1.69B revenue to recover leakage and optimize occupancy.</p>
-                    <a href="https://github.com/hathimds/atliq-hospitality-analysis" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">Power BI • Revenue Analysis</span>
+                    <h3>AtliQ Hospitality Performance</h3>
+                    <p>Analyzed ₹1.69B in revenue to pinpoint 29.9% leakage. Designed DAX-driven dashboards to optimize occupancy and RevPAR.</p>
+                    <a href="https://github.com/hathimds/atliq-hospitality-analysis" class="p-link">View Project</a>
                 </div>
             </div>
 
             <div class="case-card">
                 <div class="case-img"><img src="Retail_Sales_Analytics.png"></div>
                 <div class="case-body">
-                    <span class="tag">SQL Engineering</span>
-                    <h3>Retail Sales Engine</h3>
-                    <p>Built a star-schema model using CTEs to uncover seasonal profitability trends.</p>
-                    <a href="https://github.com/hathimds/retail-sales-analysis-sql" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">SQL • Star Schema</span>
+                    <h3>Retail Sales Intelligence Engine</h3>
+                    <p>Architected a robust SQL schema using CTEs and Window Functions to extract seasonal trends and product performance metrics.</p>
+                    <a href="https://github.com/hathimds/retail-sales-analysis-sql" class="p-link">View Queries</a>
                 </div>
             </div>
 
             <div class="case-card">
                 <div class="case-img"><img src="HR_Workforce_Analytics.png"></div>
                 <div class="case-body">
-                    <span class="tag">People Analytics</span>
-                    <h3>Workforce Intelligence</h3>
-                    <p>Visualized 8,950 records to identify attrition drivers and salary parity.</p>
-                    <a href="https://github.com/hathimds/hr-workforce-analytics" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">Tableau • Python</span>
+                    <h3>Workforce Attrition Analytics</h3>
+                    <p>Generated and analyzed 8,950+ employee records. Identified key drivers behind 11% attrition to support proactive HR planning.</p>
+                    <a href="https://github.com/hathimds/hr-workforce-analytics" class="p-link">View Analysis</a>
                 </div>
             </div>
 
             <div class="case-card">
                 <div class="case-img"><img src="Blinkit_Sales_Analytics.png"></div>
                 <div class="case-body">
-                    <span class="tag">Business Intelligence</span>
-                    <h3>Blinkit Sales Analytics</h3>
-                    <p>Comprehensive analysis of outlet performance and location-based revenue tiers.</p>
-                    <a href="https://github.com/hathimds/blinkit-sales-analysis" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">Power BI • KPI Reporting</span>
+                    <h3>Blinkit Sales Insights</h3>
+                    <p>Synthesized $1.2M sales data to evaluate outlet performance across different location tiers and fat-content preferences.</p>
+                    <a href="https://github.com/hathimds/blinkit-sales-analysis" class="p-link">View Work</a>
                 </div>
             </div>
 
             <div class="case-card">
                 <div class="case-img"><img src="Sales_And_Customers_Analytics.png"></div>
                 <div class="case-body">
-                    <span class="tag">Tableau</span>
-                    <h3>Customer Growth Analytics</h3>
-                    <p>Tracked YoY growth and profit margins across diverse product categories.</p>
-                    <a href="https://github.com/hathimds/tableau-sales-customer-analysis" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <span class="p-tag">Tableau • Profit Analytics</span>
+                    <h3>Retail Customer Growth</h3>
+                    <p>Visualized 12.7% profit margins and 20.4% YoY growth across categories to inform strategic inventory management.</p>
+                    <a href="https://github.com/hathimds/tableau-sales-customer-analysis" class="p-link">View Dashboard</a>
                 </div>
             </div>
 
@@ -118,34 +142,67 @@
     </section>
 
     <section id="certs">
-        <div class="section-title"><h2>Professional Certifications</h2></div>
-        <div class="cert-list">
-            <a href="https://drive.google.com/file/d/1pCVReK6mamfinsq4SoXUcKQsmI1xGO3c/view?usp=sharing" class="cert-item" target="_blank">
-                <span>Deloitte Australia - Data Analytics Job Simulation</span>
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/10YNsfjQE_QtZV5cqmudE5VfVWxvnxRFv/view?usp=sharing" class="cert-item" target="_blank">
-                <span>IIT Madras - Foundational Level in Programming & DS</span>
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/1HvpfETADndzJDZRwjYWz_vzdkWPmvbJ7/view?usp=sharing" class="cert-item" target="_blank">
-                <span>Edure - Diploma in Data Science</span>
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/178F4JMVSgjm5WeBLa23aWDhLW7ynv_Z-/view?usp=sharing" class="cert-item" target="_blank">
-                <span>Microsoft & LinkedIn - Career Essentials in Data Analysis</span>
-                <i class="fas fa-external-link-alt"></i>
-            </a>
+        <div class="section-title"><h2>Credentials & Certifications</h2></div>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-university"></i></div>
+                <div class="cert-info">
+                    <h4>IITM Foundational Level in Programming and DS</h4>
+                    <p>Indian Institute of Technology, Madras | 2025</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                <div class="cert-info">
+                    <h4>Diploma in Data Science</h4>
+                    <p>Edure | 2025</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="cert-info">
+                    <h4>Data Analytics Job Simulation</h4>
+                    <p>Deloitte Australia | 2026</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="cert-info">
+                    <h4>Data Science & AI</h4>
+                    <p>Avodha | 2026</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="cert-info">
+                    <h4>Career Essentials in Data Analysis</h4>
+                    <p>Microsoft & LinkedIn | 2026</p>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                <div class="cert-info">
+                    <h4>Generative AI for Data Analysis & Data Science</h4>
+                    <p>LinkedIn | 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect">
+        <div class="connect-box">
+            <h2>Let's Drive Impact Together</h2>
+            <p>I am currently open to Data Analyst, Business Analyst, and Associate Data Scientist roles.</p>
+            <div class="social-links">
+                <a href="mailto:hathimmanafds@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/hathim-manaf"><img src="linkedin_logo.png" class="inline-logo"> LinkedIn</a>
+                <a href="https://github.com/hathimds"><i class="fab fa-github"></i> GitHub</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="social-footer">
-            <a href="https://linkedin.com/in/hathim-manaf"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/hathimds"><i class="fab fa-github"></i></a>
-            <a href="mailto:hathimmanafds@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p>© 2026 Hathim Manaf</p>
+        <p>© 2026 Hathim Manaf | Designed for Excellence</p>
     </footer>
 
 </body>
