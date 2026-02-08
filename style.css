@@ -88,3 +88,21 @@ footer { padding: 4rem; text-align: center; border-top: 1px solid #111; color: v
 section {
     padding-top: 80px; /* Adjust this number (60px to 100px) to get the exact gap you want */
 }
+
+
+/* Styling the icons */
+.social-links a i {
+    margin-right: 8px; /* Spacing between icon and text */
+    font-size: 1.2rem;  /* Size of the icon */
+    color: var(--accent); /* Makes icons match your blue theme */
+    transition: 0.3s;
+}
+
+/* Hover effect for the whole link */
+.social-links a:hover {
+    color: var(--accent);
+}
+
+.social-links a:hover i {
+    transform: scale(1.2); /* Slight pop-out effect on hover */
+}
