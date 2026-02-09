@@ -106,3 +106,74 @@ section {
 .social-links a:hover i {
     transform: scale(1.2); /* Slight pop-out effect on hover */
 }
+
+/* --- MOBILE & TABLET OPTIMIZATION --- */
+
+@media (max-width: 768px) {
+    /* 1. Fix the Hero Section */
+    .hero-container {
+        flex-direction: column; /* Stacks image on top of text */
+        text-align: center;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .hero-image img {
+        width: 220px; /* Smaller image for mobile */
+        height: 220px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem; /* Shorter titles for small screens */
+    }
+
+    .hero-btns {
+        flex-direction: column; /* Stack buttons so they don't squash */
+        gap: 1rem;
+    }
+
+    /* 2. Fix Navigation */
+    nav .nav-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    /* 3. Fix Project & Skill Grids */
+    .portfolio-grid, .skills-visual, .cert-grid {
+        grid-template-columns: 1fr; /* Force one item per row */
+        gap: 1.5rem;
+    }
+
+    /* 4. Section Spacing Fix */
+    section {
+        padding-top: 50px; /* Reduced space for mobile */
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 5. Contact Section */
+    .social-links {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .connect-box {
+        padding: 3rem 1rem;
+    }
+}
