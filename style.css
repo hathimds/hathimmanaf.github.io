@@ -173,6 +173,110 @@ section {
         align-items: center;
     }
 
+    /* --- COMPREHENSIVE MOBILE OPTIMIZATION --- */
+
+@media (max-width: 768px) {
+    /* 1. Prevent Horizontal Scrolling */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* 2. Fix the Margins (Headings) */
+    .container {
+        padding: 0 20px; /* Thinner margins so text has room */
+    }
+
+    /* 3. Hero Section Stack */
+    .hero-container {
+        flex-direction: column !important; /* Forces image above text */
+        text-align: center;
+        gap: 2rem;
+        padding: 4rem 0;
+    }
+
+    .hero-image img {
+        width: 200px; /* Smaller profile pic */
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem; /* Title won't break or overlap */
+        line-height: 1.2;
+    }
+
+    .hero-btns {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;
+    }
+
+    .btn-main, .btn-sub {
+        width: 100%; /* Full width buttons for easy tapping */
+        text-align: center;
+    }
+
+    /* 4. Navigation Fix */
+    nav {
+        padding: 1rem 0;
+    }
+
+    .nav-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap; /* Wraps links if they are too wide */
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .nav-links a {
+        margin: 0 5px;
+        font-size: 0.8rem;
+    }
+
+    /* 5. Grids (Projects, Skills, Certs) */
+    .portfolio-grid, 
+    .skills-visual, 
+    .cert-grid {
+        grid-template-columns: 1fr !important; /* Force ONE column only */
+        gap: 1.5rem;
+    }
+
+    .case-card {
+        max-width: 100%;
+    }
+
+    /* 6. Section Spacing */
+    section {
+        padding-top: 40px; /* Less empty space on mobile */
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    /* 7. Certificates Fix */
+    .cert-item {
+        flex-direction: column; /* Icon/Logo on top, text below */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cert-logo-img {
+        margin-right: 0;
+    }
+
+    /* 8. Connect Section */
+    .social-links {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
     .connect-box {
         padding: 3rem 1rem;
     }
