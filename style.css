@@ -318,7 +318,107 @@ footer { padding: 4rem; text-align: center; color: var(--muted); font-size: 0.9r
         border-radius: 20px;
     }
 
+
     .cert-item { flex-direction: row; text-align: left; }
     
     .social-links { flex-direction: column; align-items: center; gap: 2rem; }
+}
+
+
+/* 1. ROOT VARIABLES - Ensuring high contrast */
+:root {
+    --bg: #030305;          /* Deep dark background */
+    --card: #0c0c0e;        /* Darker card background */
+    --accent: #00d2ff;      /* Bright blue for highlights ONLY */
+    --text: #ffffff;        /* Pure white for primary text visibility */
+    --muted: #a0a0aa;       /* Light grey for secondary text */
+    --border: rgba(255, 255, 255, 0.08);
+}
+
+/* 2. GLOBAL RESET & BASE STYLES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+body { 
+    background-color: var(--bg) !important; /* Forces the deep dark background */
+    color: var(--text) !important;           /* Forces white text for visibility */
+    line-height: 1.6;
+}
+
+/* 3. FIXING SPECIFIC VISIBILITY ISSUES */
+
+/* Hero Text Fix */
+.hero-text h1 { 
+    color: var(--text); 
+    font-size: 4.5rem; 
+    font-weight: 800;
+}
+
+/* Ensure spans (blue highlights) are readable on dark background */
+.hero-text h1 span, .logo span { 
+    color: var(--accent); 
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.2); 
+}
+
+/* Paragraph Visibility */
+p, .hero-text p { 
+    color: var(--muted); /* Light grey is easier on the eyes than pure blue */
+    font-size: 1.1rem;
+}
+
+/* 4. NAVIGATION - Glassmorphism */
+nav { 
+    background: rgba(3, 3, 5, 0.8); 
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-links a { 
+    color: var(--text); 
+    transition: 0.3s; 
+}
+
+.nav-links a:hover { 
+    color: var(--accent); 
+}
+
+/* 5. BUTTONS - High Contrast */
+.btn-main { 
+    background: var(--accent); 
+    color: #000; /* Dark text on bright blue background */
+    font-weight: 800;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-sub {
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 6. CARD FIXES */
+.skill-card, .case-card, .cert-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    body {
+        padding: 0 15px;
+    }
 }
